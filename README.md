@@ -30,26 +30,39 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.forEach is an array method that we use to execute a function on each item type in an array, and executes the provided callback once for each element in the array, whereas .map is an array method that creates a NEW array while calling a function for every element in the array, however it does NOT execute the function for elements without values.
+
 2. What is the difference between a function and a method?
+
+A function is a set of statements that performs a task or calculates a value, and it must be defined somewhere in the scope from which it is called versus a method is an action that can be performed on objects, and it is a property that contains a function definition.
 
 3. What is closure?
 
+Closure in a function gives access to an outer function’s scope from an inner function, meaning it is made available to any scope outside the outer function. It allows for things like “public” and “private” variable and it important for different types of data acquisition.
+
 4. Describe the four rules of the 'this' keyword.
 
+    1. Window Binding- 'This' keyword defaults to the window object when it isn't specified by .call, .apply, .bind or nothing is to the left of the dot.   Can run 'strict mode' to unbind from or not utilize window object to run an undefined. 
+    2. Implicit Binding- Most common rule,looks to the left of the dot when the function is called and that's what 'this' references. When a function is invoked with the 'new' keyword,'this' inside the function is bound to the new object that is being constructed. 
+    3. New Binding- Uses Constructor Functions called with 'new' keyword, and creates a brand new object.
+    4. Explicit Binding- Uses .call, .apply, and .bind properties to explicitly state where 'this' is being referenced. .apply is same as .call, but instead of passing in arguments one by one(like .call), it can pass arguments in as an array. .bind also works the same as .call, but returns a brand new function that can be called later. 
+
 5. Why do we need super() in an extended class?
+
+Used in inheritance models and with the constructor functions, the super keyword is used in conjunction with  the extends keyword in order to access and call functions on an object’s parent.
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [ x] Create a forked copy of this project.
+- [ x] Add TL as collaborator on Github.
+- [ x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [ x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [ x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [ x] You are now ready to build this project with your preferred IDE
+- [ x] Implement the project on your Branch, committing changes regularly.
+- [ x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
